@@ -34,11 +34,15 @@ $commands = @(
 
 #region Change mapping here
 # The available account properties are linked to the available properties of the command "Set-CsPhoneNumberAssignment": https://learn.microsoft.com/en-us/powershell/module/teams/set-csphonenumberassignment?view=teams-ps command "https://learn.microsoft.com/en-us/powershell/module/teams/set-csphonenumberassignment?view=teams-ps", 
+# Phone numbers use the format "+<country code> <number>x<extension>", with extension optional.
+# For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format. 
+$phoneNumber = "+31621345678"
+if(-not($phoneNumber.StartsWith("+31"))){
+    $phoneNumber = "+31" + $phoneNumber
+}
 $account = [PSCustomObject]@{
     Identity        = $p.Accounts.MicrosoftAzureAD.userPrincipalName
-    # Phone numbers use the format "+<country code> <number>x<extension>", with extension optional.
-    # For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format. 
-    PhoneNumber     = "+31" + $p.Contact.Business.Phone.Mobile
+    PhoneNumber     = $phoneNumber
     PhoneNumberType = "DirectRouting"
 }
 
