@@ -1,0 +1,57 @@
+[
+    {
+        "key": "MicrosoftEntraIDTenantId",
+        "type": "input",
+        "defaultValue": "",
+        "templateOptions": {
+            "label": "Microsoft Entra ID Tenant ID",
+            "placeholder": "1234567-2538-4922-80e2-b890abcde",
+            "description": "The ID of the Tenant in Microsoft Entra ID",
+            "required": true
+        }
+    },
+    {
+        "key": "MicrosoftEntraIDAppId",
+        "type": "input",
+        "defaultValue": "",
+        "templateOptions": {
+            "label": "Microsoft Entra ID App ID",
+            "placeholder": "1234567-2538-4922-80e2-b890abcde",
+            "description": "The ID of the App Registration in Microsoft Entra ID with the Microsoft Teams permissions to the specfied organization",
+            "required": true
+        }
+    },
+    {
+        "key": "MicrosoftEntraIDAppSecret",
+        "type": "input",
+        "defaultValue": "",
+        "templateOptions": {
+            "label": "Microsoft Entra ID App Secret",
+            "type": "password",
+            "placeholder": "1234567-2538-4922-80e2-b890abcde",
+            "description": "The Secret of the App Registration in Microsoft Entra ID with the Microsoft Teams permissions to the specfied organization",
+            "required": true
+        }
+    },
+    {
+        "key": "OnlySetPhoneNumberWhenEmpty",
+        "type": "checkbox",
+        "defaultValue": true,
+        "templateOptions": {
+            "label": "Only Set Phone Number When Empty",
+            "placeholder": "1234567-2538-4922-80e2-b890abcde",
+            "description": "When toggled, the Phone Number will only be set if there currently is no value set",
+            "required": false
+        }
+    },
+    {
+        "key": "isDebug",
+        "type": "checkbox",
+        "defaultValue": false,
+        "templateOptions": {
+            "label": "Toggle debug logging",
+            "description": "When toggled, debug logging will be displayed",
+            "required": false
+        }
+    }
+]
