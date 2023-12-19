@@ -11,7 +11,7 @@ Repository for HelloID Provisioning Target Connector to Microsoft Teams to set t
 | This repository contains the connector and configuration code only. The implementer is responsible to acquire the connection details such as username, password, certificate, etc. You might even need to sign a contract or agreement with the supplier before implementing this connector. Please contact the client's application manager to coordinate the connector requirements.       |
 
 <p align="center">
-  <img src="https://www.tools4ever.nl/wp-content/themes/tools4ever/img/tools4ever-logo.svg">
+  <img src="https://github.com/Tools4everBV/HelloID-Conn-Prov-Target-MicrosoftTeams-DirectRoutingPhonenumber/blob/main/icon.png?raw=true" width="200" heigth="200">
 </p>
 
 ## Table of Contents
