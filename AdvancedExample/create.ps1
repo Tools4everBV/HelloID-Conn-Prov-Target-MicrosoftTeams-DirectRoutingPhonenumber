@@ -252,12 +252,7 @@ try {
         }
     }
     else {
-        if ($actionContext.Configuration.correlateOnly -eq $true) {
-            throw "Correlation is disabled while configuration option [correlateOnly] is toggled."
-        }
-        else {
-            Write-Warning "Correlation is disabled."
-        }
+        Throw "Correlation is disabled"
     }
 
     $actionMessage = "calculating action"
