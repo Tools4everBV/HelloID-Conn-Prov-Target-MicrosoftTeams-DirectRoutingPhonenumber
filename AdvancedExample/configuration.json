@@ -1,0 +1,90 @@
+[
+  {
+    "key": "TenantID",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "App Registration Directory (tenant) ID",
+      "placeholder": "615g75e2-0v74-4a3c-6gaf-241t1q4m7f54",
+      "description": "",
+      "required": true
+    }
+  },
+  {
+    "key": "AppId",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "App Registration Application (client) ID",
+      "placeholder": "9c12a9b1-34c5-678d-ac34-8a890100d46d",
+      "description": "",
+      "required": true
+    }
+  },
+  {
+    "key": "AppSecret",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "App Registration Client Secret",
+      "type": "password",
+      "placeholder": "3lib1234NwDvx.6abc98M._r0yz_7h_B34",
+      "required": true
+    }
+  },
+  {
+    "key": "DbServer",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "Phone number database server name",
+      "placeholder": "",
+      "description": "The full domain name of the phone number database",
+      "required": true
+    }
+  },
+  {
+    "key": "DbName",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "Phone number database name",
+      "placeholder": "",
+      "description": "The full domain name of the phone number database",
+      "required": true
+    }
+  },
+  {
+    "key": "DbUsername",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "Phone number database username",
+      "placeholder": "",
+      "description": "The username of the phone number database",
+      "required": true
+    }
+  },
+  {
+    "key": "DbPassword",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "type": "password",
+      "label": "Phone number database password",
+      "placeholder": "",
+      "description": "The password of the phone number database",
+      "required": true
+    }
+  },
+  {
+    "key": "isDebug",
+    "type": "checkbox",
+    "defaultValue": false,
+    "templateOptions": {
+      "label": "Toggle debug logging",
+      "description": "When toggled, debug logging will be displayed",
+      "required": false
+    }
+  }
+]
