@@ -16,7 +16,7 @@ Repository for HelloID Provisioning Target Connector to Microsoft Teams to set t
 
 #### Advanced example
 This folder contains an advanced example of the Direct Routing Phonenumber connector and is based on a Powershell v2 connector.
-The connector loads a set of phone numbers from a database and checks which numbers is free in Teams. Then it selects and configures the free number and sets a Teams Routing Policy.
+The connector loads a set of phone numbers from a database and checks which number is free in Teams. Then it selects and configures the free number and sets a Teams Routing Policy.
 
 ## Getting help
 > _For more information on how to configure a HelloID PowerShell connector, please refer to our [documentation](https://docs.helloid.com/hc/en-us/articles/360012558020-Configure-a-custom-PowerShell-target-system) pages_
